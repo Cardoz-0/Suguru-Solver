@@ -1,8 +1,11 @@
 # SUGURU SOLVER
 
+## Graduandos
+Gabriel da Silva Cardoso (20100524)
+Julio Gonçalves Ramos (19203165)
+
 ## Relatório em Vídeo
 Acompanhe o relatório em vídeo no youtube : https://youtu.be/UKXcL7VkfnI
-
 
 ## O problema
 
