@@ -1,42 +1,32 @@
+## Grupo:
+Gabriel da Silva Cardoso - 20100524
+
+Julio Gonçalves Ramos - 19203165
+
+## Links:
+Repositório Git com o código: https://github.com/Cardoz-0/Suguru-Solver
+
+Apresentação: https://youtu.be/UKXcL7VkfnI
+
 # SUGURU SOLVER
-
-## Graduandos
-Gabriel da Silva Cardoso (20100524)
-Julio Gonçalves Ramos (19203165)
-
-## Relatório em Vídeo
-Acompanhe o relatório em vídeo no youtube : https://youtu.be/UKXcL7VkfnI
 
 ## O problema
 
-Suguru é um quebra cabeça onde o tabuleiro é dividido em grupos e cada um deles precisa ser completo com números de 1 a N, onde N é o tamanho do grupo.
-No entanto, há uma regra para como os números podem ser postos no tabuleiro, que é onde a complexidade do puzzle é criada: um número não pode ser posto nas oito casas em torno de um igual.
+Suguru é um quebra cabeça onde o tabuleiro é dividido em grupos ou regiões que devem ser preenchidos com números de acordo com as regras do jogo.
+
+Existem duas regras para como os números podem ser postos no tabuleiro, que é onde a complexidade do puzzle é criada: 
+1. um número não pode ser posto nas oito casas em torno de um igual.
+2. as regiões devem ser completadas obedecendo a regra acima, com números de 1 a N, onde N é o tamanho da região.
 
 ## Solução
 Parte da dificuldade de realizar um algoritmo para o resolver sugarus é que vários caminhos para a solução são sem saída e é preciso checar por esses casos e voltar o quanto for necessário para resolver o problema.
 
-Para isso, é utiliado a estratégia de backtracking, assim, várias soluções são testadas em sequência e caso ela não a solução, é descaratada. Isso é feito até chegar na solução.
+Para isso, é utiliado a estratégia de backtracking, assim, várias soluções são testadas em sequência e caso ela não seja adequada, é descartada. Isso é feito até chegar na solução de fato.
 
-## Implementação
-Uma grande parte do código serve para implementar funções para operar matrizes em Haskell, que não tem suporte nativo para isso.
+## Entrada e saída
+A entrada dos tabuleiros de jogo é feita diretamente no código. A função tabuleiro que recebe o tamanho do tabuleiro desejado e retorna um tabuleiro (inserido pelo usuário) em forma de matriz (lista de listas). Espaços vazios são representados pelo número 0.
 
-Para que o código entenda o tabuleiro, é necessário declarar duas matrizes: uma com os valores iniciais do puzzle e uma que separa as regiões.
-
-A matriz de entrada representa espaços vazios com 0, já a matriz de regiões utiliza o 0 como um dos índices das regiões.
-
-É também gerado um vetor de tamanhos, que contém um número com o tamanho de cada região.
-
-O algoritmo principal primeiro checa se o número esta dentro dos limites da matriz e se ele se encaixa como solução.
-
-A partir daí, existem vários casos de teste dependendo da condição do número testado e do tabuleiro, por exemplo:
-Checar nova linha (backtrackingTestNextColumn)
-Checar nova coluna (backtrackingTestNextLine)
-Testar próximo número (backtrackingTestNewNumber)
-Achar próxima posição para tentar um número (backtrackingFindNextPos)
-Validar uma posição proposta (backtrackingValidate)
-Entre outros.
-
-## Como utilizar
+Também é necessário uma matriz para especificar as regiões do tabuleiro, também inserida pelo usuário. Cada região é representada por um grupo de elementos com o mesmo valor adjacentes um ao outro. Ao contrário do tabuleiro, 0 é utilizado como índice.
 
 Para adicionar um novo puzzle de suguru basta ir em tabuleiros.hs e adicionar as duas matrizes necessárias. A primeira precisa das regiões da matriz, estas são representadas por números. Já a segunda basta adicionar os valores na sua posição na matriz, sendo que o zero significas um valor vazio
 ```
@@ -87,7 +77,6 @@ Para executar:
 ```
 ./suguru
 ```
-## Output do Programa
 Após ser executado o programa printa a matriz do tabuleiro resolvido
 ```
 [3,4,2,1,5,1,2]
@@ -100,6 +89,22 @@ Após ser executado o programa printa a matriz do tabuleiro resolvido
 ```
 
 ![matriz](https://i.imgur.com/UpMl6af.png)
+
+
+## Implementação
+Uma grande parte do código serve para implementar funções para operar matrizes em Haskell, que não tem suporte nativo para isso.
+
+É gerado um vetor de tamanhos, que contém um número com o tamanho de cada região.
+
+O algoritmo principal primeiro checa se o número esta dentro dos limites da matriz e se ele se encaixa como solução.
+
+A partir daí, existem vários casos de teste dependendo da condição do número testado e do tabuleiro, por exemplo:
+- Checar nova linha (backtrackingTestNextColumn)
+- Checar nova coluna (backtrackingTestNextLine)
+- Testar próximo número (backtrackingTestNewNumber)
+- Achar próxima posição para tentar um número (backtrackingFindNextPos)
+- Validar uma posição proposta (backtrackingValidate)
+- Entre outros.
 
 ## Separação de tarefas
 As tarefas do trabalho foram separadas entre os integrantes do grupo:
