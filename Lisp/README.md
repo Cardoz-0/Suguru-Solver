@@ -104,7 +104,7 @@ A partir daí, existem vários casos de teste dependendo da condição do númer
 - Entre outros. "
 
 ## Separação de tarefas
-(nao sei como dividir isso pq foi só passar tudo pra lisp)
+As tarefas do trabalho foram separadas entre os integrantes do grupo: Um dos integrantes ficou a cargo de passar o código em haskell para Lisp e comentar o código novamente, o outro montou o relatório e realizou as tarefas relacionadas a edição de vídeo e pesquisa sobre arrays em Lisp.
 
 ## Dificuldades
 Nesse trabalho houveram menos dificuldades únicas, mas algumas já encontradas retornaram.
