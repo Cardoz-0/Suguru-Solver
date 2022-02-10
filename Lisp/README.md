@@ -4,9 +4,9 @@ Gabriel da Silva Cardoso - 20100524
 Julio Gonçalves Ramos - 19203165
 
 ## Links:
-Repositório Git com o código: 
+Repositório Git com o código: https://github.com/Cardoz-0/Suguru-Solver/tree/main/Lisp
 
-Apresentação: 
+Apresentação: https://www.youtube.com/watch?v=m175trgHkfY
 
 # SUGURU SOLVER EM LISP
 
