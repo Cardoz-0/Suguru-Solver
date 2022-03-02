@@ -61,8 +61,6 @@ limites([[4,4,4,5,5,5,5,5],
     [5,5,5,5,5,5,5,5]]).
 ```
 
-![matriz](https://i.imgur.com/xWQDVhM.png)
-
 Para compilar basta rodar:
 ```
 ["suguru_comentado_final.pl"].
@@ -82,9 +80,6 @@ Após ser executado o programa printa a matriz do tabuleiro resolvido:
 [2,3,4,1,2,3,2,1]
 [1,5,2,3,4,5,4,5]
 ```
-
-![matriz](https://i.imgur.com/UpMl6af.png)
-
 
 ## Implementação
 Foram utilizadas restrições para guiar o comportamento de backtracking do Prolog à solução adequada.
