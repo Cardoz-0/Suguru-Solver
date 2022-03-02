@@ -5,6 +5,7 @@ Julio Gonçalves Ramos - 19203165
 
 ## Links:
 Repositório Git com o código: https://github.com/Cardoz-0/Suguru-Solver/tree/main/Prolog
+
 Apresentação: https://youtu.be/Zy75h_eb5sQ
 
 # SUGURU SOLVER EM PROLOG
@@ -104,4 +105,5 @@ As tarefas do trabalho foram separadas entre os integrantes do grupo: Os dois in
 
 ## Dificuldades
 Tivemos bastante dificuldade com a linguagem Prolog, mais do que nos trabalhos passados. A forma de programar em restrições é bem diferente do que o que estamos acostumados.
+
 Frequentemente encontramos erros de "argumentos não suficientemente instanciados", tendo que usar funções built in ou achar métodos menos convencionais.
